@@ -1,6 +1,10 @@
+*{
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
- 
+
 }
 
 body{
@@ -9,16 +13,14 @@ body{
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
   height: auto;
   min-height: 100vh;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
-  background: rgb(255, 171, 208);
   background: linear-gradient(135deg, rgb(255, 237, 171), rgb(234, 121, 170));
 }
 
 .todo-input{
-  width: 90%;
-  padding: 10px;
+  width: 60%;
   font-size: 1em;
   margin: 10px 10px 10px auto;
   border-radius: 4px;
@@ -40,6 +42,51 @@ body{
   box-shadow: 5px 5px 10px #cccccc, -5px -5px 15px #ffffff;
 }
 
+.todo-button:hover{
+  box-shadow: 5px 5px 10px #cccccc, -5px -5px 10px #ffffff;
+}
 
+.todo-form{
+  bottom: 4px;
+  position: absolute;
+  width: 100%;
+}
 
+.todo-row{
+  width: 60%;
+  font-size: 1em;
+  margin: 10px 10px 10px auto;
+  border-radius: 4px;
+  padding: 12px;
+  border-color: rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  box-shadow: 5px 5px 13px #d9d9d9, -5px -5px 13px #ffffff;
+}
+.todo-row-complete{
+  width: 60%;
+  font-size: 1em;
+  margin: 10px 10px 10px auto;
+  border-radius: 4px;
+  padding: 12px;
+  border-color: rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  box-shadow: 5px 5px 13px #d9d9d9, -5px -5px 13px #ffffff
+}
+
+.minus-button{
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-color: transparent;
+  color: #FF0000;
+  font-size: 2rem;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 5px 5px 10px #cccccc, -5px -5px 15px #ffffff;
+}
+
+.App-logo{
+  width: 50px;
+  top: 50px;
+}
 
