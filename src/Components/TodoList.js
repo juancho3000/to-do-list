@@ -37,6 +37,7 @@ function TodoList (){
         setTodos(updatedTodos);
     };
     return(
+<div className="list-todo">
 <div>
  <h1>Todo list app</h1>
  <TodoForm onSubmit={addTodo}/>
@@ -45,6 +46,7 @@ function TodoList (){
  removeTodo={removeTodo}
  updateTodo={updateTodo}
  />
+</div>
 </div>
  );
 }

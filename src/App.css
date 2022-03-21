@@ -54,18 +54,21 @@ body{
 
 .todo-row{
   display: flex;
+  height: 10vh;
+  align-items: center;
 }
 
 .text{
   width: 60%;
   font-size: 1em;
-  margin: 10px 10px 10px 164px;
+  margin: auto;
   border-radius: 4px;
   padding: 12px;
   border-color: rgba(0, 0, 0, 0.1);
   background: #ffffff;
   box-shadow: 5px 5px 13px #d9d9d9, -5px -5px 13px #ffffff;
   text-align: start;
+  font-weight: bold;
 }
 /*
 .todo-row-complete{
@@ -94,4 +97,12 @@ body{
 .App-logo{
   width: 50px;
   top: 50px;
+}
+
+.list-todo{
+  background-color: #ffffff;
+  padding: 12px;
+  margin: 12px 12px 12px 12px;
+  border-radius: 10px;
+  height: 89vh;
 }
