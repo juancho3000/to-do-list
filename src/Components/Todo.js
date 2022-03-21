@@ -24,9 +24,9 @@ function Todo ({ todos, completeTodo, removeTodo, updateTodo }){
     }
 
     return todos.map((todo, index) =>(
-     <div className={todo.isComplete ? 'todo-row-complete' : 
+     <form className={todo.isComplete ? 'todo-row' : 
      'todo-row'} key={index}>
-         <div 
+         <div className="text"
              key={todo.id} 
              onClick={()=> 
              completeTodo(todo.id)}>
@@ -35,7 +35,7 @@ function Todo ({ todos, completeTodo, removeTodo, updateTodo }){
          
          <button 
          className='minus-button' onClick={() => removeTodo(todo.id)}>-</button> 
-     </div>
+     </form>
     ))
     }
     
