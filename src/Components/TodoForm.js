@@ -25,7 +25,7 @@ function TodoForm (props){
     };
 
     return(
-       
+       <div> 
         <form className='todo-form' onSubmit={handleSubmit}>
             <input 
             type='text' 
@@ -37,9 +37,8 @@ function TodoForm (props){
             ref={inputRef}
             />   
             <button className='todo-button'>+</button>
-          
         </form>
-        
+        </div>
     );
 }
 export default TodoForm;

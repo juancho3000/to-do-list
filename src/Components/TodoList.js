@@ -1,12 +1,24 @@
 import React, {useState} from "react";
 import TodoForm from "./TodoForm";
 import Todo from "./Todo";
+import logo from '../imagenes-todo/react-logo.png';
 
 function TodoList (){
     const [todos, setTodos] = useState ([]);
+    const[showError, setShowError] = useState(false);
+
+     //const error - begin
+     const displayError= ()=> {
+        setShowError(true);
+        const clearTimer = setTimeout (() => setShowError(false), 3000);
+        return () => clearTimeout(clearTimer);
+    };
+    //const error - end
+
 
     const addTodo = todo => {
         if(!todo.text || /^\s*$/.test(todo.text)){
+            displayError();
             return;
         }
         const newTodos = [todo, ...todos];
@@ -38,6 +50,7 @@ function TodoList (){
     };
     return(
 <div className="list-todo">
+<img src={logo} className="App-logo" alt='logo'/>
 <div>
  <h1>Todo list app</h1>
  <TodoForm onSubmit={addTodo}/>
@@ -47,6 +60,7 @@ function TodoList (){
  updateTodo={updateTodo}
  />
 </div>
+<div className="warning" type="alert">{showError && <p>Please add a todo!</p>}</div>
 </div>
  );
 }
