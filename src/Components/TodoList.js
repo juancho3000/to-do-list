@@ -25,7 +25,7 @@ function TodoList (){
             return;
         }
         const newTodos = [todo, ...todos];
-        emitter.emit("NOTIFICATION", "todo added succesfully")
+        emitter.emit("NOTIFICATION", `"${todo.text}"has been added`)
         setTodos(newTodos);
         console.log(todo, ...todos);
     };

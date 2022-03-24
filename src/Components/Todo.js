@@ -28,8 +28,7 @@ function Todo ({ todos, completeTodo, removeTodo, updateTodo }){
          <button 
          className='minus-button'
           onClick={() => 
-          removeTodo(todo.id)}
-          >-</button> 
+          removeTodo(todo.id)}>-</button> 
      </form>
     ))
     }
