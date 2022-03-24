@@ -106,3 +106,7 @@ body{
   border-radius: 10px;
   height: 96vh;
 }
+
+.added-list{
+  color: blue;
+}

@@ -20,10 +20,8 @@ function TodoForm (props){
             id: Math.floor(Math.random() * 1000),
             text: input 
         });
-
         setInput('');
     };
-
     return(
        <div> 
         <form className='todo-form' onSubmit={handleSubmit}>

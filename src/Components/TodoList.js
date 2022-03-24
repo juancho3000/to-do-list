@@ -1,11 +1,14 @@
 import React, {useState} from "react";
 import TodoForm from "./TodoForm";
-import Todo from "./Todo";
+import Todo from "./Todo.js";
 import logo from '../imagenes-todo/react-logo.png';
+import Notificacion from "./TodoNotification.js";
+import { emitter } from "./TodoNotification.js";
 
 function TodoList (){
     const [todos, setTodos] = useState ([]);
     const[showError, setShowError] = useState(false);
+
 
      //const error - begin
      const displayError= ()=> {
@@ -22,7 +25,7 @@ function TodoList (){
             return;
         }
         const newTodos = [todo, ...todos];
-
+        emitter.emit("NOTIFICATION", "todo added succesfully")
         setTodos(newTodos);
         console.log(todo, ...todos);
     };
@@ -53,6 +56,8 @@ function TodoList (){
 <img src={logo} className="App-logo" alt='logo'/>
 <div>
  <h1>Todo list app</h1>
+ <div className="warning" type="alert">{showError && <p>Please add a todo!</p>}</div>
+ <Notificacion/>
  <TodoForm onSubmit={addTodo}/>
  <Todo todos={todos} 
  completeTodo={completeTodo} 
@@ -60,7 +65,6 @@ function TodoList (){
  updateTodo={updateTodo}
  />
 </div>
-<div className="warning" type="alert">{showError && <p>Please add a todo!</p>}</div>
 </div>
  );
 }
