@@ -25,7 +25,7 @@ function Todo ({ todos, completeTodo, removeTodo, updateTodo }){
              completeTodo(todo.id)}>
              {todo.text}
          </div>  
-         <button 
+         <button type="button"
          className='minus-button'
           onClick={() => 
           removeTodo(todo.id)}>-</button> 
