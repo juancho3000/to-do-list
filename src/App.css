@@ -2,8 +2,13 @@
   box-sizing: border-box;
 }
 
+#root{
+  margin: 1px;
+}
+
 .App {
   text-align: center;
+  padding: 2px;
 
 }
 
