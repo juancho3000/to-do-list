@@ -56,9 +56,10 @@ function TodoList (){
 <img src={logo} className="App-logo" alt='logo'/>
 <div>
  <h1>Todo list app</h1>
+ <TodoForm onSubmit={addTodo}/>
  <div className="warning" type="alert">{showError && <p>Please add a todo!</p>}</div>
  <Notificacion/>
- <TodoForm onSubmit={addTodo}/>
+ 
  <Todo todos={todos} 
  completeTodo={completeTodo} 
  removeTodo={removeTodo}
