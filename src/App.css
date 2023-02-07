@@ -11,7 +11,6 @@
 .App {
   display: flex;
   text-align: center;
-  padding: 3px;
   width: 100%;
 
 }
@@ -61,6 +60,12 @@ body{
   display: flex;
   height: 10vh;
   align-items: center;
+}
+
+.todo-block{
+  max-height: 636px;
+  display: flex;
+  flex-direction: column;
 }
 
 .text{
