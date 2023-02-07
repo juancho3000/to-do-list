@@ -23,7 +23,7 @@ function TodoForm (props){
         setInput('');
     };
     return(
-       <div> 
+       <div className='form-list'> 
         <form className='todo-form' onSubmit={handleSubmit}>
             <input 
             type='text' 

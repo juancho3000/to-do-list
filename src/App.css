@@ -62,6 +62,13 @@ body{
   align-items: center;
 }
 
+.form-list{
+  display: flex;
+  bottom: 55px;
+  position: absolute;
+  justify-content: center;
+}
+
 .todo-block{
   max-height: 636px;
   display: flex;
