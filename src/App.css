@@ -64,7 +64,7 @@ body{
 
 .form-list{
   display: flex;
-  bottom: 55px;
+  bottom: 72%;
   position: absolute;
   justify-content: center;
 }
