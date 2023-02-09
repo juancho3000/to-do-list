@@ -72,7 +72,8 @@ body{
 }
 
 .todo-block{
-  max-height: 636px;
+  max-height: 390px;
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
 }
