@@ -56,6 +56,7 @@ function TodoList (){
 <img src={logo} className="App-logo" alt='logo'/>
 <div className="todo-block">
  <h1>Todo list app</h1>
+ <Notificacion/>
  <Todo todos={todos} 
  completeTodo={completeTodo} 
  removeTodo={removeTodo}
@@ -63,7 +64,7 @@ function TodoList (){
  />
  <TodoForm onSubmit={addTodo}/>
  <div className="warning" type="alert">{showError && <p>Please add a todo!</p>}</div>
- <Notificacion/>
+ 
  
  
 </div>
