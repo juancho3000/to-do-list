@@ -54,7 +54,7 @@ function TodoList (){
     return(
 <div className="list-todo">
 <img src={logo} className="App-logo" alt='logo'/>
- <h1>Todo list app</h1>
+ <h1>Todo list react application</h1>
 <div className="todo-block">
 
  <div className="warning" type="alert">{showError && <p>Please add a todo!</p>}</div>
