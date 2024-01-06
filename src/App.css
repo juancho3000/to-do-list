@@ -50,12 +50,13 @@ body{
 }
 
 .todo-form{
-  bottom: -395px;
+  bottom: -475px;
   position: absolute;
   display: flex;
   margin: 10% -61% 10% 3%;
   width: 100%;
   text-align: center;
+  justify-content: center;
 }
 
 .todo-row{
@@ -70,9 +71,12 @@ body{
 }
 
 .todo-block{
-  max-height: 390px;
+  max-height: 270px;
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  gap: 5px;
 }
 
 .text{
@@ -115,7 +119,6 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-height: 475px;
-  overflow-y: scroll;
+  max-height: 520px;
 }
 

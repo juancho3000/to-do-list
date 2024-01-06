@@ -54,8 +54,9 @@ function TodoList (){
     return(
 <div className="list-todo">
 <img src={logo} className="App-logo" alt='logo'/>
-<div className="todo-block">
  <h1>Todo list app</h1>
+<div className="todo-block">
+
  <div className="warning" type="alert">{showError && <p>Please add a todo!</p>}</div>
  <Notificacion/>
  <Todo todos={todos} 
@@ -63,8 +64,9 @@ function TodoList (){
  removeTodo={removeTodo}
  //updateTodo={updateTodo}
  />
- <TodoForm onSubmit={addTodo}/>
+ 
 </div>
+<TodoForm onSubmit={addTodo}/>
 </div>
  );
 }
